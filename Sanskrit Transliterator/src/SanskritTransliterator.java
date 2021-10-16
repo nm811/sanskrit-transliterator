@@ -74,18 +74,12 @@ public class SanskritTransliterator {
 		StringBuilder message = new StringBuilder();
 		String line = br.readLine();
 		while (line != "") {
-		//for (String line = br.readLine(); line != null; line = br.readLine()) {
-			//st = new StringTokenizer(br.readLine());
 			st = new StringTokenizer(line);
 			while (st.hasMoreTokens()) {
 				String s = st.nextToken();
-				//System.out.println("s = " + s);
-				
 				StringBuilder word = new StringBuilder(s.length());
-				//boolean invalid = false;
 				for (int i = 0; i < s.length(); i++) {
 					char c = s.charAt(i);
-					//String c = String.valueOf(s.charAt(i));
 					if (s.charAt(i) == 'ं') {
 						if (i + 1 >= s.length()) { // the anusvara is the last character
 							word.append('ṃ');
