@@ -130,17 +130,9 @@ public class SanskritTransliterator {
 					} else if (punctuation.containsKey(c)) {
 						word.append(punctuation.get(c));
 					} else {
-						/*System.out.println("Invalid character - " + c + ". Program terminated.");
-						invalid = true;
-						break;*/
 						word.append(c);
 					}
-					
-					//System.out.println(s.charAt(i));
 				}
-				/*if (!invalid) {
-					System.out.println(word.toString());
-				}*/
 				message.append(word);
 				if (st.hasMoreTokens()) {
 					message.append(' ');
@@ -149,12 +141,6 @@ public class SanskritTransliterator {
 			message.append("\n");
 			line = br.readLine();
 		}
-		System.out.println("vowels = " + vowels);
-		System.out.println("maatraas = " + maatraas);
-		System.out.println("consonants = " + consonants);
-		System.out.println("numbers = " + numbers);
-		System.out.println("punctuation = " + punctuation);
-		
 		System.out.println("---------------------------------------\nmessage:\n");
 		System.out.println(message.toString());
 	}
