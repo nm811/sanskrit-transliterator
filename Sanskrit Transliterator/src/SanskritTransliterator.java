@@ -22,6 +22,7 @@ public class SanskritTransliterator {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
+		System.out.println("Enter Sanskrit text:");
 		
 		char[] devanagari = {'अ', 'आ', 'इ', 'ई', 'उ', 'ऊ', 'ऎ', 'ए', 'ऐ', 'ऒ', 'ओ', 'औ', 'ऋ', 'ॠ', 'ऌ', 'ॡ'};
 		String[] roman = {"a", "ā", "i", "ī", "u", "ū", "e", "ē", "ai", "o", "ō", "au", "r̥", "r̥̄", "l̥", "l̥̄"};
